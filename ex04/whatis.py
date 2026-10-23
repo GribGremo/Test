@@ -3,9 +3,9 @@ import sys
 
 def whatis(arg: int) -> None:
     if arg % 2 == 0:
-        print("I'm even")
+        print("I'm Even")
     else:
-        print("I'm odd")
+        print("I'm Odd")
 
 
 if __name__ == "__main__":

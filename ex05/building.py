@@ -11,7 +11,11 @@ def main() -> int:
 
     punct = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
     if len(sys.argv) == 1:
-        entry = input("What is the text to count?\n")
+        try:
+            entry = input("What is the text to count?\n")
+        except KeyboardInterrupt:
+            print("\nOperation cancelled")
+            return
     else:
         entry = sys.argv[1]
 
